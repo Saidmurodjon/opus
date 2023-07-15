@@ -1,11 +1,12 @@
 import React from "react";
 
 import bannerImg from "../../assets/img/banner-img.png";
-
+// eslint-disable-next-line 
 import { useGlobalContext } from "../../context/context";
 
 import "./banner.css";
 const Banner = () => {
+  // eslint-disable-next-line 
   const { openSidebar } = useGlobalContext();
 
   return (
