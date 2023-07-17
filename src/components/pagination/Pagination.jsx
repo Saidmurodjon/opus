@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import "./pagination.css";
 
 const Pagination = ({ currentPage, setPage, total }) => {
+  
+
+  
   return (
     <section className="pagination justify-content-around">
       <nav aria-label="Page navigation ">
@@ -79,11 +82,4 @@ const Pagination = ({ currentPage, setPage, total }) => {
 };
 
 export default Pagination;
-{
-  /* <Pagination
-currentPage={next.page}
-setPage={(elem) => setNext({ ...next, page: elem })}
-total={Math.ceil(count / next.limit)}
 
-/> */
-}

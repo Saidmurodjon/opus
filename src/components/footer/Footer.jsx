@@ -118,6 +118,7 @@ const Footer = () => {
           <div className="footer-copyright col-12 text-center py-3 ">
             <p>
               &copy;{new Date().getFullYear()} by
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a href="#"> SX Group</a>, All rights reserved
             </p>
           </div>

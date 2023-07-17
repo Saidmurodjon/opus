@@ -61,8 +61,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item me-5 ">
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a
-                
                   href="#"
                   onClick={toggleSubmenu}
                   className=" px-3 px-lg-0"
