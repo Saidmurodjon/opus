@@ -1,7 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
-import { Stars } from "..";
+import React, { useState } from "react";
 
 import "./courseCard.css";
 
@@ -12,30 +9,35 @@ const CourseCard = ({
   creator,
   creator_img,
   star,
+  candidate,
+  teacher,
+  certificate,
+  overall,
+  date,
 }) => {
+  const [show, setShow] = useState(false);
+  console.log(show);
   return (
-    <div className="col-md-6 col-lg-3">
+    <div className="col-md-6 col-lg-3" onClick={() => setShow(true)}>
       <article className="course">
-        <Link to="/singlecourse">
-          <div className="course-header">
-            <img src={course_img} alt={title} className="rounded" />
-            <span className="theme-bg px-2 py-1 fw-bold rounded">
-              $ {price}
+        <div className="course-header">
+          <img src={certificate} alt={title} className="rounded" />
+          <span className="theme-bg px-2 py-1 fw-bold rounded">{overall}</span>
+        </div>
+        <h3 className="course-title my-3 fs-5">{candidate}</h3>
+        <div className="course-footer">
+          <div className="footer-creator">
+            <span>
+              <b>Teacher:</b> {teacher}
             </span>
           </div>
-          <h3 className="course-title my-3 fs-5">{title}</h3>
-          <div className="course-footer">
-            <div className="footer-creator">
-              <img src={creator_img} alt={creator} className="me-2" />
-              <span>{creator}</span>
-            </div>
-            <div className="footer-stars mt-2 d-flex">
-              <span className="me-1 fw-bold">({star})</span>
-              <Stars stars={star} />
-            </div>
+          <div className="footer-stars mt-2 d-flex">
+            <span className="me-1 fw-bold">({date})</span>
           </div>
-        </Link>
+        </div>
       </article>
+
+      {/* <Certificate image={certificate} modal={show} /> */}
     </div>
   );
 };

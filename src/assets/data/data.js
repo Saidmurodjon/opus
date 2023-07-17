@@ -169,8 +169,7 @@ export const course = {
       star: "5",
 
       title: "Really useful",
-      text:
-        "Beyond very pragmatic explanations about basic and advanced JavaScript concepts, the course is full of best practices to design/build apps in JavaScript without frameworks (huge focus on the DOM). This is not so easy to find as most of the courses focus on vanilla JS to build basic examples or frameworks to build more advanced apps. Really useful!",
+      text: "Beyond very pragmatic explanations about basic and advanced JavaScript concepts, the course is full of best practices to design/build apps in JavaScript without frameworks (huge focus on the DOM). This is not so easy to find as most of the courses focus on vanilla JS to build basic examples or frameworks to build more advanced apps. Really useful!",
     },
     {
       user: "Matsu C",
@@ -178,8 +177,7 @@ export const course = {
       time: "2 days ago",
       star: "4",
       title: "Keep learning",
-      text:
-        "Bundling the courses and know how of successful instructors, Academind strives to deliver high quality online educationOnline Education, RealLife Success that's what Academind stands for. Learn topics like web development, data analyses and more in a fun and engaging way.Currently, you can find courses published by Maximilian Schwarzmüller and Manuel Lorenz, more instructors to come!",
+      text: "Bundling the courses and know how of successful instructors, Academind strives to deliver high quality online educationOnline Education, RealLife Success that's what Academind stands for. Learn topics like web development, data analyses and more in a fun and engaging way.Currently, you can find courses published by Maximilian Schwarzmüller and Manuel Lorenz, more instructors to come!",
     },
     {
       user: "Christopher A.",
@@ -187,8 +185,7 @@ export const course = {
       time: "6 days ago",
       star: "5",
       title: "good course",
-      text:
-        "I have taken almost 2 months to complete this course. For the reason I started this course is because I wanna explore deeper in React. Max React Course is extremely amazing as well, and let me got an offer!What I really wanna emphasize it that this JS - Complete Course gives me the Confidence to say Give me network and JS, I can create any software!. Maybe a bit boast, but that is really how I feel whenever I learn from Max.I wanna say thank you Max, even though we never meet in real life, you are really my best mentor in my life time, and I appreciate a lot you spend so many time on create these fabulous courses! Hope that I can create something helpful to people like you do to world, in the future",
+      text: "I have taken almost 2 months to complete this course. For the reason I started this course is because I wanna explore deeper in React. Max React Course is extremely amazing as well, and let me got an offer!What I really wanna emphasize it that this JS - Complete Course gives me the Confidence to say Give me network and JS, I can create any software!. Maybe a bit boast, but that is really how I feel whenever I learn from Max.I wanna say thank you Max, even though we never meet in real life, you are really my best mentor in my life time, and I appreciate a lot you spend so many time on create these fabulous courses! Hope that I can create something helpful to people like you do to world, in the future",
     },
     {
       user: "Ncha Takoh E.",
@@ -196,8 +193,7 @@ export const course = {
       time: "just a moment ago",
       star: "4",
       title: "very useful",
-      text:
-        "it was nice course at least i got some understanding where i was in doubt, the instructor was good, that is why i was able to buy two of it course again react and nodejs",
+      text: "it was nice course at least i got some understanding where i was in doubt, the instructor was good, that is why i was able to buy two of it course again react and nodejs",
     },
   ],
 
@@ -293,5 +289,160 @@ export const courses = [
     star: 3.2,
     price: "99",
     category: "music",
+  },
+];
+//! contact informations
+export const contact = {
+  tel: "+9985634562",
+  map: {
+    name: "Fer 12",
+    location:
+      "https://yandex.uz/maps/10336/phergana/?ll=71.784733%2C40.391488&mode=routes&rtext=~40.391618%2C71.784614&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D18077527440&z=17",
+  },
+  email: "admin@opus.uz",
+  social: [
+    { icon: "fab fa-facebook", path: "https://facebook.com" },
+    { icon: "fab fa-twitter", path: "https://facebook.com" },
+    { icon: "fab fa-instagram", path: "https://facebook.com" },
+  ],
+  creato: { title: "optimum", path: "#" },
+};
+//! contact informations
+export const navbar = [
+  { title: "Home", path: "#", subcategory: [] },
+  { title: "User", path: "#", subcategory: [{ title: "Login", path: "#" }] },
+];
+//! results data
+export const ielts = [
+  {
+    _id: 1,
+    candidate: "Saidmurodjon KHamdamov",
+    overall: "7.5",
+    level: "C1",
+    certificate: 'https://image.slidesharecdn.com/ad28dffb-b1e9-4415-9aea-7f550931122e-150927024955-lva1-app6892/85/ielts-certificate-1-320.jpg?cb=1665795706',
+    teacher: "Odil Karimov",
+    date: "11-06-2023",
+  },
+  {
+    _id: 2,
+    candidate: "Saidmurodjon KHamdamov",
+    overall: "7.5",
+    level: "C1",
+    certificate: web1,
+    teacher: "Odil Karimov",
+    date: "11-06-2023",
+  },
+  {
+    _id: 3,
+    candidate: "Saidmurodjon KHamdamov",
+    overall: "7.5",
+    level: "C1",
+    certificate: web1,
+    teacher: "Odil Karimov",
+    date: "11-06-2023",
+  },
+  {
+    _id: 10,
+    candidate: "Saidmurodjon KHamdamov",
+    overall: "7.5",
+    level: "C1",
+    certificate: web1,
+    teacher: "Odil Karimov",
+    date: "11-06-2023",
+  },
+  {
+    _id: 20,
+    candidate: "Saidmurodjon KHamdamov",
+    overall: "7",
+    level: "C1",
+    certificate: web1,
+    teacher: "Odil Karimov",
+    date: "11-06-2023",
+  },
+  {
+    _id: 30,
+    candidate: "Saidmurodjon KHamdamov",
+    overall: "7.5",
+    level: "C1",
+    certificate: web1,
+    teacher: "Odil Karimov",
+    date: "11-06-2023",
+  },
+  {
+    _id: 11,
+    candidate: "Saidmurodjon KHamdamov",
+    overall: "7.5",
+    level: "C1",
+    certificate: 'https://image.slidesharecdn.com/ad28dffb-b1e9-4415-9aea-7f550931122e-150927024955-lva1-app6892/85/ielts-certificate-1-320.jpg?cb=1665795706',
+    teacher: "Odil Karimov",
+    date: "11-06-2023",
+  },
+  {
+    _id: 21,
+    candidate: "Saidmurodjon KHamdamov",
+    overall: "7.5",
+    level: "C1",
+    certificate: web1,
+    teacher: "Odil Karimov",
+    date: "11-06-2023",
+  },
+  {
+    _id: 31,
+    candidate: "Saidmurodjon KHamdamov",
+    overall: "7.5",
+    level: "C1",
+    certificate: web1,
+    teacher: "Odil Karimov",
+    date: "11-06-2023",
+  },
+  {
+    _id: 101,
+    candidate: "Saidmurodjon KHamdamov",
+    overall: "7.5",
+    level: "C1",
+    certificate: web1,
+    teacher: "Odil Karimov",
+    date: "11-06-2023",
+  },
+  {
+    _id: 201,
+    candidate: "Saidmurodjon KHamdamov",
+    overall: "7",
+    level: "C1",
+    certificate: web1,
+    teacher: "Odil Karimov",
+    date: "11-06-2023",
+  },
+  {
+    _id: 301,
+    candidate: "Saidmurodjon KHamdamov",
+    overall: "7.5",
+    level: "C1",
+    certificate: web1,
+    teacher: "Odil Karimov",
+    date: "11-06-2023",
+  },
+  
+];
+export const sat = [
+  {
+    _id: 1,
+    candidate: "Saidmurodjon KHamdamov",
+    overall: "1400",
+    level: "B2",
+    certificate: web1,
+    teacher: "Odil Karimov",
+    date: "11-06-2023",
+  },
+];
+export const cefr = [
+  {
+    _id: 1,
+    candidate: "Saidmurodjon KHamdamov",
+    overall: "60",
+    level: "B2",
+    certificate: web1,
+    teacher: "Odil Karimov",
+    date: "11-06-2023",
   },
 ];

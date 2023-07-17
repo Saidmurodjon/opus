@@ -3,47 +3,72 @@ import { Link } from "react-router-dom";
 
 import "./pagination.css";
 
-const Pagination = () => {
+const Pagination = ({ currentPage, setPage, total }) => {
+  console.log(currentPage);
   return (
     <section className="pagination justify-content-around">
       <nav aria-label="Page navigation ">
         <ul className="pagination">
-          <li className="page-item">
+          <li
+            className="page-item"
+            onClick={() =>
+              setPage(currentPage - 1 === 0 ? currentPage : currentPage - 1)
+            }
+          >
             <Link to={""} className="page-link" aria-label="Previous">
               <i className="fas fa-chevron-left"></i>
             </Link>
           </li>
-          <li className="page-item">
+          <li
+            className={`page-item ${currentPage - 1 === 0 ? "d-none" : ""}`}
+            onClick={() =>
+              setPage(currentPage - 1 === 0 ? currentPage : currentPage - 1)
+            }
+          >
             <Link to={""} className="page-link">
-              1
+              {currentPage - 1 === 0 ? "" : currentPage - 1}
             </Link>
           </li>
           <li className="page-item active">
             <Link to={""} className="page-link">
-              2
+              {currentPage}
             </Link>
           </li>
-          <li className="page-item">
+          <li
+            className={`page-item ${currentPage + 1 < total ? "" : "d-none"}`}
+            onClick={() => setPage(currentPage + 1)}
+          >
             <Link to={""} className="page-link">
-              3
+              {currentPage + 1}
             </Link>
           </li>
-          <li className="page-item">
+          <li
+            className={`page-item ${currentPage + 2 < total ? "" : "d-none"}`}
+            onClick={() => setPage(currentPage + 2)}
+          >
             <Link to={""} className="page-link ">
-              4
+              {currentPage + 2}
             </Link>
           </li>
-          <li className="page-item">
-            <Link to={""} className="page-link disabled">
+          <li
+            className={`page-item ${currentPage + 3 < total ? "" : "d-none"}`}
+          >
+            <Link to={""} className="page-link">
               ...
             </Link>
           </li>
-          <li className="page-item">
+          <li className={`page-item ${currentPage === total ? "d-none" : ""}`}>
             <Link to={""} className="page-link">
-              40
+              {total}
             </Link>
           </li>
-          <li className="page-item">
+
+          <li
+            className="page-item"
+            onClick={() =>
+              setPage(currentPage !== total ? currentPage + 1 : currentPage)
+            }
+          >
             <Link to={""} className="page-link" aria-label="Next">
               <i className="fas fa-chevron-right"></i>
             </Link>
@@ -55,3 +80,11 @@ const Pagination = () => {
 };
 
 export default Pagination;
+{
+  /* <Pagination
+currentPage={next.page}
+setPage={(elem) => setNext({ ...next, page: elem })}
+total={Math.ceil(count / next.limit)}
+
+/> */
+}

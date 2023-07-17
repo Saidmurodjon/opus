@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { contact } from "../../assets/data/data";
 import "./footer.css";
 
 const Footer = () => {
@@ -15,7 +15,8 @@ const Footer = () => {
                   <i className="fa fa-phone"></i>
                 </div>
                 <div className="contact-text">
-                  <h6>+1 5687485</h6>
+                  <a href={"tel:+99891125555"}>{contact.tel}</a>
+                  {/* <h6>+1 5687485</h6> */}
                   <p>Mon-Fri 9am-6pm</p>
                 </div>
               </div>
@@ -24,7 +25,7 @@ const Footer = () => {
                   <i className="fas fa-envelope"></i>
                 </div>
                 <div className="contact-text">
-                  <h6>info@learnplus.com</h6>
+                  <a href={"mailto" + contact.email}>Send Email</a>
                   <p>Online support</p>
                 </div>
               </div>
@@ -33,7 +34,13 @@ const Footer = () => {
                   <i className="fa fa-map"></i>
                 </div>
                 <div className="contact-text">
-                  <h6>New York, USA</h6>
+                  <Link
+                    to={
+                      "https://yandex.uz/maps/10336/phergana/?ll=71.784733%2C40.391488&mode=routes&rtext=~40.391618%2C71.784614&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D18077527440&z=17"
+                    }
+                  >
+                    New York, USA
+                  </Link>
                   <p>NY 10012, US</p>
                 </div>
               </div>
@@ -47,21 +54,15 @@ const Footer = () => {
                     <p>connect with us on social media</p>
                   </div>
                   <div className="col-12 col-md-6 d-flex justify-content-center align-items-baseline ">
-                    <div className="social-icon me-2">
-                      <i className="fab fa-facebook"></i>
-                    </div>
-                    <div className="social-icon me-2">
-                      <i className="fab fa-twitter"></i>
-                    </div>
-                    <div className="social-icon me-2">
-                      <i className="fab fa-linkedin"></i>
-                    </div>
-                    <div className="social-icon me-2">
-                      <i className="fab fa-github"></i>
-                    </div>
-                    <div className="social-icon me-2">
-                      <i className="fab fa-instagram"></i>
-                    </div>
+                    {contact.social.map((item) => (
+                      <a
+                        href={item.path}
+                        target="blank"
+                        className="social-icon me-2"
+                      >
+                        <i className={item.icon}></i>
+                      </a>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -72,10 +73,11 @@ const Footer = () => {
               <div className="links-pages  col-sm-6">
                 <h3>
                   <Link to="/" className=" text-uppercase fs-3 fw-bold">
-                    <span>lrn</span>plus
+                    <span>O</span>pus
                   </Link>
                 </h3>
                 <ul className="navbar-nav ">
+                  {}
                   <li className="nav-item  ">
                     <Link className="nav-link" to="/">
                       Home
@@ -125,8 +127,8 @@ const Footer = () => {
           <div className="footer-copyright col-12 text-center py-3 ">
             <p>
               &copy;{new Date().getFullYear()} by
-              <a href="https://github.com/kamalheydari"> kamal heydari</a>, All
-              rights reserved
+              <a href="https://github.com/kamalheydari"> Optimum</a>, All rights
+              reserved
             </p>
           </div>
         </div>
