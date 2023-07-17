@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 import App from "./App.js";
 import { HashRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
 import "./theme/darkMode.css";
 import "./theme/colors.css";
@@ -17,6 +18,7 @@ ReactDOM.render(
     <HashRouter>
       <ScrollToTop/>
       <App />
+      <ToastContainer />
     </HashRouter>
   </AppProvider>,
   document.getElementById("root")

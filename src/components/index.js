@@ -2,7 +2,7 @@ export { default as Navbar } from "./navbar/Navbar";
 export { default as Banner } from "./banner/Banner";
 export { default as Facts } from "./facts/Facts";
 export { default as Title } from "./title/Title";
-export { default as Courses } from "./courses/Courses";
+export { default as Results } from "./results/Results";
 export { default as CourseCard } from "./courseCard/CourseCard";
 export { default as Stars } from "./stars/Stars";
 export { default as Instructor } from "./instructor/Instructor";

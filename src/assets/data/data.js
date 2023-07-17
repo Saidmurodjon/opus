@@ -293,13 +293,13 @@ export const courses = [
 ];
 //! contact informations
 export const contact = {
-  tel: "+9985634562",
+  tel: "+99899 405 33 66",
   map: {
-    name: "Fer 12",
+    name: "Fergana",
     location:
-      "https://yandex.uz/maps/10336/phergana/?ll=71.784733%2C40.391488&mode=routes&rtext=~40.391618%2C71.784614&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D18077527440&z=17",
+      "https://yandex.uz/maps/10336/phergana/?ll=71.784860%2C40.391332&mode=routes&rtext=~40.391618%2C71.784614&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D18077527440&z=18.8",
   },
-  email: "admin@opus.uz",
+  email: "saidmurodjon1020@gmail.com",
   social: [
     { icon: "fab fa-facebook", path: "https://facebook.com" },
     { icon: "fab fa-twitter", path: "https://facebook.com" },

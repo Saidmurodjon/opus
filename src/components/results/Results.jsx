@@ -3,23 +3,21 @@ import { Link } from "react-router-dom";
 
 import { CourseCard, Title } from "..";
 
-import { courses } from "../../assets/data/data";
+import { ielts } from "../../assets/data/data";
 
-const Courses = () => {
+const Results = () => {
   return (
     <section className="courses">
       <div className="container">
-        <Title title="courses" subtitle="Find the right course for you" />
+        <Title title="Results" subtitle="Find the right course for you" />
         <div className="row gx-4 gy-5">
-          {courses
-            .filter((item) => item.category === "web")
-            .map((item) => (
-              <CourseCard {...item} key={item.id} />
-            ))}
+          {ielts.slice(0, 4).map((item) => (
+            <CourseCard {...item} key={item.id} />
+          ))}
         </div>
         <div className="row">
           <div className="col-12 text-center mt-5">
-            <Link to="/courses" className="theme-btn">
+            <Link to="/results" className="theme-btn">
               view all courses
             </Link>
           </div>
@@ -29,4 +27,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default Results;

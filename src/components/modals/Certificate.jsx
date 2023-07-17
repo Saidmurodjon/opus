@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { GrClose } from "react-icons/gr";
 import "./index.css";
 const Certificate = ({ image, modal }) => {
-  console.log(modal);
   const [show, setShow] = useState(modal);
   return show ? (
     <div className={"modalBackground"}>

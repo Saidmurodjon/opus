@@ -1,11 +1,12 @@
 import React from "react";
 
 import Breadcrumb from "../components/breadcrumb/Breadcrumb";
-
+import { contact } from "../assets/data/data";
+import { toast } from "react-toastify";
 const Contact = () => {
   return (
     <>
-      <Breadcrumb current='Contact' />
+      <Breadcrumb current="Contact" />
       <section className="contact">
         <div className="container">
           <div className="row">
@@ -18,7 +19,9 @@ const Contact = () => {
                   </div>
                   <div className="item-text">
                     <h5>Addres</h5>
-                    <p>New York, USA 12 st</p>
+                    <a href={contact.map.location} target="blank">
+                      {contact.map.name}
+                    </a>
                   </div>
                 </div>
                 <div className="contact-item d-flex mb-2 ">
@@ -27,7 +30,7 @@ const Contact = () => {
                   </div>
                   <div className="item-text">
                     <h5>Phone</h5>
-                    <p>+1 5687485</p>
+                    <a href={`tel:${contact.tel}`}>{contact.tel}</a>
                   </div>
                 </div>
                 <div className="contact-item d-flex mb-2 ">
@@ -36,15 +39,17 @@ const Contact = () => {
                   </div>
                   <div className="item-text">
                     <h5>Email</h5>
-                    <p>info@learnplus.com</p>
+                    <a href={"mailto:" + contact.email}>{contact.email}</a>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-md-6">
               <div className="contact-form box">
-                <h2 className="text-center fs-4 fw-bold mb-5">Leave a Message</h2>
-                <form>
+                <h2 className="text-center fs-4 fw-bold mb-5">
+                  Leave a Message
+                </h2>
+                <form onSubmit={(e) => e.preventDefault()}>
                   <div className="form-group mb-3">
                     <input
                       type="text"
@@ -72,7 +77,16 @@ const Contact = () => {
                       className="form-control"
                     ></textarea>
                   </div>
-                  <button type="submit" className="theme-btn w-100">
+                  <button
+                    type="submit"
+                    className="theme-btn w-100"
+                    onClick={() =>
+                      toast.warn("Server is not working !", {
+                        theme: "colored",
+                        position: "top-right",
+                      })
+                    }
+                  >
                     Send Message
                   </button>
                 </form>

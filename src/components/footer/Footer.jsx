@@ -15,7 +15,7 @@ const Footer = () => {
                   <i className="fa fa-phone"></i>
                 </div>
                 <div className="contact-text">
-                  <a href={"tel:+99891125555"}>{contact.tel}</a>
+                  <a href={`tel:${contact.tel}`}>{contact.tel}</a>
                   {/* <h6>+1 5687485</h6> */}
                   <p>Mon-Fri 9am-6pm</p>
                 </div>
@@ -25,8 +25,8 @@ const Footer = () => {
                   <i className="fas fa-envelope"></i>
                 </div>
                 <div className="contact-text">
-                  <a href={"mailto" + contact.email}>Send Email</a>
-                  <p>Online support</p>
+                  <a href={"mailto:" + contact.email}>{contact.email}</a>
+                  <p>Send email</p>
                 </div>
               </div>
               <div className="col-md-4 d-flex">
@@ -34,14 +34,8 @@ const Footer = () => {
                   <i className="fa fa-map"></i>
                 </div>
                 <div className="contact-text">
-                  <Link
-                    to={
-                      "https://yandex.uz/maps/10336/phergana/?ll=71.784733%2C40.391488&mode=routes&rtext=~40.391618%2C71.784614&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D18077527440&z=17"
-                    }
-                  >
-                    New York, USA
-                  </Link>
-                  <p>NY 10012, US</p>
+                <h5>Addres</h5>
+                    <a href={contact.map.location} target="blank">{contact.map.name}</a>
                 </div>
               </div>
             </div>
@@ -111,7 +105,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="links-info  col-sm-6 mt-4 mt-sm-0">
-                <h3>learn plus</h3>
+                <h3>About us</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Molestiae natus labore laudantium esse accusantium corporis

@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar,Footer, StyleSwitcher } from "./components";
+import { Navbar, Footer, StyleSwitcher } from "./components";
 import ConfigRoutes from "./ConfigRoutes";
 
 const App = () => {
@@ -7,8 +7,8 @@ const App = () => {
     <div className="main-wrapper">
       <Navbar />
       <ConfigRoutes />
-      <Footer/>
-      <StyleSwitcher/>
+      <Footer />
+      <StyleSwitcher />
     </div>
   );
 };

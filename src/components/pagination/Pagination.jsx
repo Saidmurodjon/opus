@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "./pagination.css";
 
 const Pagination = ({ currentPage, setPage, total }) => {
-  console.log(currentPage);
   return (
     <section className="pagination justify-content-around">
       <nav aria-label="Page navigation ">

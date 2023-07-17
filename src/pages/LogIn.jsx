@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Breadcrumb } from "../components";
+import { toast } from "react-toastify";
 
 const LogIn = () => {
   return (
@@ -15,7 +16,7 @@ const LogIn = () => {
                 <h2 className="text-center fs-4 mb-5 fw-bold">
                   Log In To Your Account
                 </h2>
-                <form>
+                <form onSubmit={(e) => e.preventDefault()}>
                   <div className="form-group mb-3 ">
                     <input
                       type="text"
@@ -33,7 +34,16 @@ const LogIn = () => {
                       className="form-control"
                     />
                   </div>
-                  <button type="submit" className="theme-btn w-100 my-4">
+                  <button
+                    type="submit"
+                    className="theme-btn w-100 my-4"
+                    onClick={() =>
+                      toast.warn("Server is not working !", {
+                        theme: "colored",
+                        position: "top-right",
+                      })
+                    }
+                  >
                     Log In
                   </button>
                   <p className="text-center">

@@ -8,7 +8,7 @@ const Courses = () => {
   return (
     <div className="container">
       <Breadcrumb current="Courses" />
-      <Title title="our courses" subtitle="find the right course for you" />
+      <Title title="our results" subtitle="find the right course for you" />
       <section className="courses my-0 ">
         <div className="row justify-content-center">
           <div className="col-12">

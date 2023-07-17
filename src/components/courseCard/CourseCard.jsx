@@ -16,7 +16,6 @@ const CourseCard = ({
   date,
 }) => {
   const [show, setShow] = useState(false);
-  console.log(show);
   return (
     <div className="col-md-6 col-lg-3" onClick={() => setShow(true)}>
       <article className="course">
