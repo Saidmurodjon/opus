@@ -62,7 +62,8 @@ const Navbar = () => {
               </li>
               <li className="nav-item me-5 ">
                 <a
-                  href="https://www.saidmurod.uz"
+                
+                  href="#"
                   onClick={toggleSubmenu}
                   className=" px-3 px-lg-0"
                 >

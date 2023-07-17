@@ -1,12 +1,13 @@
 import React from "react";
 
 import bannerImg from "../../assets/img/banner-img.png";
-// eslint-disable-next-line 
+// eslint-disable-next-line
 import { useGlobalContext } from "../../context/context";
 
 import "./banner.css";
+import { Link } from "react-router-dom";
 const Banner = () => {
-  // eslint-disable-next-line 
+  // eslint-disable-next-line
   const { openSidebar } = useGlobalContext();
 
   return (
@@ -35,9 +36,11 @@ const Banner = () => {
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
               nisi delectus a minus.
             </p>
-            <button type="button" className="theme-btn">
-              join free
-            </button>
+            <Link to="/contact">
+              <button type="button" className="theme-btn">
+                join free
+              </button>
+            </Link>
           </div>
           <div className="col-md-6 order-first order-md-last mb-5 mb-md-0">
             <div className="circular-img">

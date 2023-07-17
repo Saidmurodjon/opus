@@ -1,23 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./courseCard.css";
 
 const CourseCard = ({
-  course_img,
   title,
-  price,
-  creator,
-  creator_img,
-  star,
   candidate,
   teacher,
   certificate,
   overall,
   date,
 }) => {
-  const [show, setShow] = useState(false);
   return (
-    <div className="col-md-6 col-lg-3" onClick={() => setShow(true)}>
+    <div className="col-md-6 col-lg-3">
       <article className="course">
         <div className="course-header">
           <img src={certificate} alt={title} className="rounded" />

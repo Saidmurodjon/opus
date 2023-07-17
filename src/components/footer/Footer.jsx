@@ -34,8 +34,10 @@ const Footer = () => {
                   <i className="fa fa-map"></i>
                 </div>
                 <div className="contact-text">
-                <h5>Addres</h5>
-                    <a href={contact.map.location} target="blank">{contact.map.name}</a>
+                  <h5>Addres</h5>
+                  <a href={contact.map.location} target="blank">
+                    {contact.map.name}
+                  </a>
                 </div>
               </div>
             </div>
@@ -78,13 +80,8 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="nav-item  ">
-                    <Link className="nav-link" to="/courses">
-                      Courses
-                    </Link>
-                  </li>
-                  <li className="nav-item  ">
-                    <Link className="nav-link" to="/singlecourse">
-                      Single Course
+                    <Link className="nav-link" to="/results">
+                      Results
                     </Link>
                   </li>
                   <li className="nav-item ">
@@ -121,8 +118,7 @@ const Footer = () => {
           <div className="footer-copyright col-12 text-center py-3 ">
             <p>
               &copy;{new Date().getFullYear()} by
-              <a href="https://github.com/kamalheydari"> Optimum</a>, All rights
-              reserved
+              <a href="#"> SX Group</a>, All rights reserved
             </p>
           </div>
         </div>
